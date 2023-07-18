@@ -1,0 +1,7 @@
+div.errorImgBox {
+  overflow: hidden;
+  border-radius: 50%;
+}
+div.errorImgBox img.errorImg {
+  width: 100%;
+}/*# sourceMappingURL=errorPage.css.map */
