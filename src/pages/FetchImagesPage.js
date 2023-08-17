@@ -15,7 +15,7 @@ const FetchImagesPage = () => {
 
   const myKey = "27fOiW9gTVEbteYKHtbKkeLPsorHR8NE0gH1JbZUVDwVFnZUB1MckWVm";
   const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=20";
-  let searchURL = `https://api.pexels.com/v1/search?query=${currentInput}&page=1&per_page=20`;
+  let searchURL = `https://api.pexels.com/v1/search?query=${input}&page=1&per_page=20`;
 
   //input變更
   const ChangeInputHanlder = (e) => {
@@ -25,7 +25,7 @@ const FetchImagesPage = () => {
   //Search按鈕
   const SearchHanlder = async (url) => {
     setCurrentInput(input);
-    if (currentInput === "") {
+    if (input === "") {
       url = initialURL;
     } else {
       url = searchURL;
